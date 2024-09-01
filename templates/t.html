@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Layout</title>
+    <style>
+        .header-image {
+            display: flex;
+            align-items: center; /* Center items vertically */
+            justify-content: space-between; /* Distribute items horizontally */
+            height: 327px;
+            width: 100vw; /* Full viewport width */
+            padding: 0 20px; /* Optional: Add some horizontal padding */
+            box-sizing: border-box; /* Ensure padding is included in width */
+            background-color: #f0f0f0; /* Optional: Background color */
+        }
+        .header-image img {
+            height: 100%; /* Make images cover the full height of the div */
+        }
+        .header-image .text {
+            flex: 1; /* Allow text to take up remaining space */
+            text-align: center; /* Center text horizontally */
+            font-size: 150px; /* Adjust text size as needed */
+            color: #333; /* Adjust text color as needed */
+            font-family:Papyrus;
+        }
+        .header-image .left-img {
+            width: 400px; /* Adjust width as needed */
+            padding-left:30px;
+        }
+        .header-image .right-img {
+            width: 400px; /* Adjust width as needed */
+            padding-right:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-image">
+        <img src="3.png" alt="Left Image" class="left-img">
+        <div class="text">Image Toolkit</div>
+        <img src="logo.jpg" alt="Right Image" class="right-img">
+    </div>
+</body>
+</html>
